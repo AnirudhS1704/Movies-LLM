@@ -7,7 +7,7 @@
   
   -> **Genre Prediction Accuracy:** The Mistral 7B model achieved nearly 80% accuracy for genre prediction tasks, a satisfactory performance given the dataset and the complexity of multi-label genre classification.<br />
 
-**2.  Implementation Details**
+**2.  Implementation Details**<br />
   -> **Platform:** The project was implemented using Google Colab, with access to the models provided through the Hugging Face Hub. Colab’s free tier was initially used, leading to several limitations in terms of RAM and GPU allocation.<br />
   
   -> **Tasks Performed:**<br />
@@ -18,12 +18,12 @@
     
   -> **Pipeline Optimization:** A significant amount of time was spent optimizing the input prompt templates for Mistral 7B to ensure more reliable and coherent outputs. These prompts made the outputs more presentable.<br />
 
-**3. Challenges Faced**
+**3. Challenges Faced**<br />
   (i) **Memory Limitations:** When initially attempting to load Mistral 7B in Google Colab, the system ran out of memory as the RAM exceeded the 12GB limit. This led to multiple crashes and forced experiments with different model sizes and configurations.<br />
   (ii) **GPU Resource Constraints:** While using larger models like LLaMA 3 and Mistral 7B, the available GPU in Google Colab hit the usage limit twice. This required careful management of GPU resources and switching between models like GPT-2 and Google PaLM to avoid further resource exhaustion.<br />
   (iii) **Template Experimentation:** A significant challenge was experimenting with various input templates to get Mistral 7B to produce reliable outputs. The initial templates led to inconsistent results, so several iterations of prompt engineering were necessary to improve the model's performance for generating descriptions and predicting genres.<br />
 
-**4. Evaluation of the Model**
+**4. Evaluation of the Model**<br />
   (i) **Genre Prediction Accuracy:** The model’s performance was evaluated based on its genre prediction capabilities, which achieved an accuracy of approximately 80%. This was a good outcome given the complexity of movie genres, where a single movie can belong to multiple categories.<br />
   (ii) **Quality of Generated Text:** The text generated for movie descriptions and plot twists was evaluated qualitatively, focusing on coherence, creativity, and relevance to the movie data provided. The model successfully generated meaningful alternate endings and creative twists that aligned with the given plot, demonstrating its effectiveness for creative writing tasks.<br />
   (iii) **Human Feedback:** Given the nature of the outputs (creative descriptions and twists), human feedback was essential for evaluating the quality. Subjective assessments were made to judge the originality and logical consistency of the model's responses.<br />
